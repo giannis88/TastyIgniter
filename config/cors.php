@@ -1,34 +1,16 @@
 <?php
 
 return [
-
-    /*
-    |--------------------------------------------------------------------------
-    | Cross-Origin Resource Sharing (CORS) Configuration
-    |--------------------------------------------------------------------------
-    |
-    | Here you may configure your settings for cross-origin resource sharing
-    | or "CORS". This determines what cross-origin operations may execute
-    | in web browsers. You are free to adjust these settings as needed.
-    |
-    | To learn more: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
-    |
-    */
-
-    'paths' => ['api/*', 'api/csrf-cookie'],
-
-    'allowed_methods' => ['*'],
-
+    'paths' => ['*'],
+    'allowed_methods' => ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     'allowed_origins' => ['*'],
-
-    'allowed_origins_patterns' => [],
-
-    'allowed_headers' => ['*'],
-
+    'allowed_origins_patterns' => [
+        '#^https?://.*\.tastyigniter\.local$#',
+        '#^https?://.*\.localhost$#'
+    ],
+    'allowed_headers' => ['Content-Type', 'Authorization', 'X-Requested-With', 'X-XSRF-TOKEN'],
     'exposed_headers' => [],
-
-    'max_age' => 0,
-
-    'supports_credentials' => false,
-
+    'max_age' => 86400,
+    'supports_credentials' => true,
+    'debug' => env('APP_DEBUG', false),
 ];

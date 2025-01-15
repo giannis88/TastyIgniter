@@ -1,17 +1,30 @@
 <?php
 
+require __DIR__.'/../vendor/autoload.php';
+
+$app = new \App\Foundation\Application(
+    $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
+);
+
+// Error handling
+if (!defined('E_DEPRECATED_MASK')) {
+    define('E_DEPRECATED_MASK', E_DEPRECATED | E_USER_DEPRECATED);
+}
+error_reporting(E_ALL & ~E_DEPRECATED_MASK & ~E_NOTICE);
+
+// Performance settings
+ini_set('memory_limit', '1G');
+gc_enable();
+
 /*
 |--------------------------------------------------------------------------
-| Create The Application
+| Register Core Service Providers
 |--------------------------------------------------------------------------
-|
-| The first thing we will do is create a new Laravel application instance
-| which serves as the "glue" for all the components of Laravel, and is
-| the IoC container for the system binding all of the various parts.
-|
 */
 
-$app = new Igniter\Flame\Foundation\Application(dirname(__DIR__));
+//$app->register(\Illuminate\Cache\CacheServiceProvider::class);
+//$app->register(\Illuminate\Redis\RedisServiceProvider::class);
+//$app->register(\Illuminate\Filesystem\FilesystemServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------

@@ -1,6 +1,9 @@
 #!/usr/bin/env php
 <?php
 
+// Set memory limit for CLI
+ini_set('memory_limit', '512M');
+
 /*
 |--------------------------------------------------------------------------
 | Register The Auto TemplateLoader

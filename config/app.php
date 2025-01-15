@@ -1,5 +1,28 @@
 <?php
 
+// Error handling configuration
+if (!defined('E_DEPRECATED_MASK')) {
+    define('E_DEPRECATED_MASK', E_DEPRECATED | E_USER_DEPRECATED);
+}
+
+// Set default error reporting level
+error_reporting(E_ALL & ~E_DEPRECATED_MASK & ~E_NOTICE);
+
+// Suppress specific deprecation notices
+$vendorPath = __DIR__.'/../vendor/';
+set_error_handler(function($errno, $errstr, $errfile) use ($vendorPath) {
+    // Suppress Laravel Logger deprecation notice
+    if (str_contains($errstr, 'Illuminate\Log\Logger::__construct()') ||
+        str_contains($errstr, 'parameter $dispatcher as nullable')) {
+        return true;
+    }
+
+    if (str_starts_with($errfile, $vendorPath) && ($errno & E_DEPRECATED_MASK)) {
+        return true;
+    }
+    return false;
+}, E_DEPRECATED_MASK);
+
 return [
 
     /*
@@ -40,6 +63,7 @@ return [
     */
 
     'debug' => (bool)env('APP_DEBUG', false),
+    'error_level' => E_ALL & ~E_DEPRECATED_MASK & ~E_NOTICE,
 
     /*
     |--------------------------------------------------------------------------
@@ -134,9 +158,14 @@ return [
     |
     */
 
-    'providers' => array_merge(include(app_path('system/providers.php')), [
+    'providers' => [
+        Illuminate\Filesystem\FilesystemServiceProvider::class,
         System\ServiceProvider::class,
-    ]),
+        Main\ServiceProvider::class,
+        Admin\ServiceProvider::class,
+        App\Providers\CorsServiceProvider::class,
+        App\Providers\LogServiceProvider::class,
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -149,7 +178,7 @@ return [
     |
     */
 
-    'aliases' => array_merge(include(app_path('system/aliases.php')), [
-        // Example
-    ]),
+    'aliases' => array_merge([
+        'App' => Illuminate\Support\Facades\App::class,
+    ], is_file($aliasesPath = __DIR__.'/../app/system/aliases.php') ? require $aliasesPath : []),
 ];

@@ -164,20 +164,7 @@ return [
     |          or you can specify a full URL path.
     */
 
-    'assets' => [
-
-        'media' => [
-            'disk' => 'media',
-            'folder' => 'uploads',
-            'path' => '/assets/media/uploads',
-        ],
-
-        'attachment' => [
-            'disk' => 'media',
-            'folder' => 'attachments',
-            'path' => '/assets/media/attachments',
-        ],
-    ],
+    'assets' => [],
 
     /*
     |--------------------------------------------------------------------------

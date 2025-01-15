@@ -19,6 +19,11 @@ return [
 
     'default' => env('LOG_CHANNEL', 'stack'),
 
+    'deprecations' => [
+        'channel' => env('LOG_DEPRECATIONS_CHANNEL', 'null'),
+        'trace' => false,
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Log Channels
@@ -37,7 +42,7 @@ return [
     'channels' => [
         'stack' => [
             'driver' => 'stack',
-            'channels' => ['single'],
+            'channels' => ['daily'],
             'ignore_exceptions' => false,
         ],
 
@@ -49,8 +54,8 @@ return [
 
         'daily' => [
             'driver' => 'daily',
-            'path' => storage_path('logs/system.log'),
-            'level' => 'debug',
+            'path' => storage_path('logs/laravel.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
             'days' => 14,
         ],
 
