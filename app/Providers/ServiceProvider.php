@@ -1,11 +1,7 @@
-<?php
-
-namespace System;
-
-use Illuminate\Support\ServiceProvider as BaseServiceProvider;
-
 class ServiceProvider extends BaseServiceProvider
 {
+    // ...existing code...
+
     /**
      * Register the service provider.
      *
@@ -13,6 +9,10 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->singleton('log', function ($app) {
+            return new \App\Logging\LoggerFactory();
+        });
     }
+
+    // ...existing code...
 }
