@@ -1,0 +1,66 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Call to an undefined static method Igniter\\\\Socialite\\\\Models\\\\Settings\\:\\:instance\\(\\)\\.$#"
+			count: 1
+			path: src/Classes/BaseProvider.php
+
+		-
+			message: "#^Call to an undefined static method Laravel\\\\Socialite\\\\Facades\\\\Socialite\\:\\:extend\\(\\)\\.$#"
+			count: 1
+			path: src/Classes/BaseProvider.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\Socialite\\\\Models\\\\Provider\\:\\:find\\(\\)\\.$#"
+			count: 1
+			path: src/Classes/ProviderManager.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\Socialite\\\\Models\\\\Provider\\:\\:firstOrNew\\(\\)\\.$#"
+			count: 1
+			path: src/Classes/ProviderManager.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\Auth\\:\\:getByCredentials\\(\\)\\.$#"
+			count: 1
+			path: src/Classes/ProviderManager.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\Auth\\:\\:getProvider\\(\\)\\.$#"
+			count: 1
+			path: src/Classes/ProviderManager.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\Auth\\:\\:login\\(\\)\\.$#"
+			count: 1
+			path: src/Classes/ProviderManager.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Str\\:\\:getClassId\\(\\)\\.$#"
+			count: 1
+			path: src/Classes/ProviderManager.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\Socialite\\\\Models\\\\Provider\\:\\:\\$user_id\\.$#"
+			count: 1
+			path: src/Models/Provider.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\Socialite\\\\Models\\\\Provider\\:\\:\\$user_type\\.$#"
+			count: 1
+			path: src/Models/Provider.php
+
+		-
+			message: "#^Call to static method driver\\(\\) on an unknown class Socialite\\.$#"
+			count: 2
+			path: src/SocialiteProviders/Facebook.php
+
+		-
+			message: "#^Call to static method driver\\(\\) on an unknown class Socialite\\.$#"
+			count: 2
+			path: src/SocialiteProviders/Google.php
+
+		-
+			message: "#^Call to static method driver\\(\\) on an unknown class Socialite\\.$#"
+			count: 2
+			path: src/SocialiteProviders/Twitter.php

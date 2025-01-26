@@ -1,0 +1,941 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\Auth\\:\\:attempt\\(\\)\\.$#"
+			count: 1
+			path: src/Actions/LoginUser.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Facades\\\\Event\\:\\:fire\\(\\)\\.$#"
+			count: 2
+			path: src/Actions/LoginUser.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\Auth\\:\\:getUser\\(\\)\\.$#"
+			count: 1
+			path: src/Actions/LogoutUser.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\Auth\\:\\:logout\\(\\)\\.$#"
+			count: 1
+			path: src/Actions/LogoutUser.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Facades\\\\Event\\:\\:fire\\(\\)\\.$#"
+			count: 1
+			path: src/Actions/LogoutUser.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\Auth\\:\\:getProvider\\(\\)\\.$#"
+			count: 1
+			path: src/Actions/RegisterUser.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\Auth\\:\\:login\\(\\)\\.$#"
+			count: 2
+			path: src/Actions/RegisterUser.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Models\\\\Customer\\:\\:whereActivationCode\\(\\)\\.$#"
+			count: 1
+			path: src/Actions/RegisterUser.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Facades\\\\Event\\:\\:fire\\(\\)\\.$#"
+			count: 2
+			path: src/Actions/RegisterUser.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Foundation\\\\Application\\:\\:refresh\\(\\)\\.$#"
+			count: 1
+			path: src/Auth/AuthServiceProvider.php
+
+		-
+			message: "#^Method Illuminate\\\\Foundation\\\\Configuration\\\\Middleware\\:\\:redirectGuestsTo\\(\\) invoked with 2 parameters, 1 required\\.$#"
+			count: 1
+			path: src/Auth/AuthServiceProvider.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:\\$address_id\\.$#"
+			count: 1
+			path: src/Auth/CustomerGuard.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:\\$customer_group_id\\.$#"
+			count: 1
+			path: src/Auth/CustomerGuard.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:\\$customer_id\\.$#"
+			count: 1
+			path: src/Auth/CustomerGuard.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:\\$email\\.$#"
+			count: 1
+			path: src/Auth/CustomerGuard.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:\\$first_name\\.$#"
+			count: 1
+			path: src/Auth/CustomerGuard.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:\\$full_name\\.$#"
+			count: 1
+			path: src/Auth/CustomerGuard.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:\\$last_name\\.$#"
+			count: 1
+			path: src/Auth/CustomerGuard.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:\\$telephone\\.$#"
+			count: 1
+			path: src/Auth/CustomerGuard.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:afterLogin\\(\\)\\.$#"
+			count: 1
+			path: src/Auth/CustomerGuard.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:beforeLogin\\(\\)\\.$#"
+			count: 1
+			path: src/Auth/CustomerGuard.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:fireEvent\\(\\)\\.$#"
+			count: 1
+			path: src/Auth/CustomerGuard.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Auth\\\\Models\\\\User\\:\\:\\$activated_at\\.$#"
+			count: 1
+			path: src/Auth/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Auth\\\\Models\\\\User\\:\\:\\$activation_code\\.$#"
+			count: 2
+			path: src/Auth/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Auth\\\\Models\\\\User\\:\\:\\$is_activated\\.$#"
+			count: 1
+			path: src/Auth/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Auth\\\\Models\\\\User\\:\\:\\$password\\.$#"
+			count: 1
+			path: src/Auth/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Auth\\\\Models\\\\User\\:\\:\\$remember_token\\.$#"
+			count: 1
+			path: src/Auth/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Auth\\\\Models\\\\User\\:\\:\\$reset_code\\.$#"
+			count: 4
+			path: src/Auth/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Auth\\\\Models\\\\User\\:\\:\\$reset_time\\.$#"
+			count: 4
+			path: src/Auth/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:\\$email\\.$#"
+			count: 2
+			path: src/Auth/UserGuard.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:\\$locations\\.$#"
+			count: 1
+			path: src/Auth/UserGuard.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:\\$name\\.$#"
+			count: 1
+			path: src/Auth/UserGuard.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:\\$username\\.$#"
+			count: 1
+			path: src/Auth/UserGuard.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:afterLogin\\(\\)\\.$#"
+			count: 1
+			path: src/Auth/UserGuard.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:beforeLogin\\(\\)\\.$#"
+			count: 1
+			path: src/Auth/UserGuard.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:fireEvent\\(\\)\\.$#"
+			count: 1
+			path: src/Auth/UserGuard.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:isSuperUser\\(\\)\\.$#"
+			count: 1
+			path: src/Auth/UserGuard.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:\\$password\\.$#"
+			count: 1
+			path: src/Auth/UserProvider.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:\\$salt\\.$#"
+			count: 1
+			path: src/Auth/UserProvider.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:\\$timestamps\\.$#"
+			count: 2
+			path: src/Auth/UserProvider.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\Flame\\\\Database\\\\Model\\:\\:extendUserQuery\\(\\)\\.$#"
+			count: 1
+			path: src/Auth/UserProvider.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\Flame\\\\Database\\\\Model\\:\\:register\\(\\)\\.$#"
+			count: 1
+			path: src/Auth/UserProvider.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:forceFill\\(\\)\\.$#"
+			count: 2
+			path: src/Auth/UserProvider.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Auth\\\\Authenticatable\\:\\:save\\(\\)\\.$#"
+			count: 1
+			path: src/Auth/UserProvider.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\AdminAuth\\:\\:getUser\\(\\)\\.$#"
+			count: 1
+			path: src/Classes/UserState.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: src/Classes/UserState.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Console\\\\Commands\\\\ClearUserStateCommand\\:\\:\\$defaultStateConfig\\.$#"
+			count: 1
+			path: src/Console/Commands/ClearUserStateCommand.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\UserPreference\\:\\:\\$id\\.$#"
+			count: 1
+			path: src/Console/Commands/ClearUserStateCommand.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\UserPreference\\:\\:\\$value\\.$#"
+			count: 1
+			path: src/Console/Commands/ClearUserStateCommand.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: src/Console/Commands/ClearUserStateCommand.php
+
+		-
+			message: "#^Access to an undefined property Faker\\\\Generator\\:\\:\\$secondaryAddress\\.$#"
+			count: 1
+			path: src/Database/Factories/AddressFactory.php
+
+		-
+			message: "#^Access to an undefined property Faker\\\\Generator\\:\\:\\$state\\.$#"
+			count: 1
+			path: src/Database/Factories/AddressFactory.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Foundation\\\\Application\\:\\:rebinding\\(\\)\\.$#"
+			count: 1
+			path: src/Extension.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Support\\\\Optional\\:\\:getKey\\(\\)\\.$#"
+			count: 1
+			path: src/Extension.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\Admin\\\\Facades\\\\AdminMenu\\:\\:registerCallback\\(\\)\\.$#"
+			count: 1
+			path: src/Extension.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\Admin\\\\Facades\\\\Template\\:\\:registerHook\\(\\)\\.$#"
+			count: 1
+			path: src/Extension.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\Auth\\:\\:customer\\(\\)\\.$#"
+			count: 1
+			path: src/Extension.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\FormWidgets\\\\PermissionEditor\\:\\:\\$actionCssClasses\\.$#"
+			count: 1
+			path: src/FormWidgets/PermissionEditor.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\FormWidgets\\\\PermissionEditor\\:\\:\\$tabs\\.$#"
+			count: 1
+			path: src/FormWidgets/PermissionEditor.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Routing\\\\Controller\\:\\:\\$assigneeConfig\\.$#"
+			count: 1
+			path: src/Http/Actions/AssigneeController.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\User\\\\Http\\\\Controllers\\\\CustomerGroups\\:\\:refreshList\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/CustomerGroups.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\Admin\\\\Facades\\\\AdminMenu\\:\\:setContext\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/CustomerGroups.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Http\\\\Controllers\\\\Customers\\:\\:\\$is_activated\\.$#"
+			count: 1
+			path: src/Http/Controllers/Customers.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Http\\\\Controllers\\\\Customers\\:\\:\\$status\\.$#"
+			count: 1
+			path: src/Http/Controllers/Customers.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\User\\\\Http\\\\Controllers\\\\Customers\\:\\:formFindModelObject\\(\\)\\.$#"
+			count: 2
+			path: src/Http/Controllers/Customers.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\Admin\\\\Facades\\\\AdminMenu\\:\\:setContext\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/Customers.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\Admin\\\\Facades\\\\Template\\:\\:setButton\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/Customers.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\Auth\\:\\:impersonate\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/Customers.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\Auth\\:\\:stopImpersonate\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/Customers.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\Admin\\\\Facades\\\\Template\\:\\:setTitle\\(\\)\\.$#"
+			count: 2
+			path: src/Http/Controllers/Login.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\AdminAuth\\:\\:attempt\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/Login.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\AdminAuth\\:\\:isLogged\\(\\)\\.$#"
+			count: 2
+			path: src/Http/Controllers/Login.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Models\\\\User\\:\\:whereEmail\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/Login.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Models\\\\User\\:\\:whereResetCode\\(\\)\\.$#"
+			count: 2
+			path: src/Http/Controllers/Login.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\AdminAuth\\:\\:isImpersonator\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/Logout.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\AdminAuth\\:\\:logout\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/Logout.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\AdminAuth\\:\\:stopImpersonate\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/Logout.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\Admin\\\\Facades\\\\AdminMenu\\:\\:setContext\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/UserGroups.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\Admin\\\\Facades\\\\AdminMenu\\:\\:setContext\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/UserRoles.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Http\\\\Controllers\\\\Users\\:\\:\\$is_activated\\.$#"
+			count: 1
+			path: src/Http/Controllers/Users.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Http\\\\Controllers\\\\Users\\:\\:\\$status\\.$#"
+			count: 1
+			path: src/Http/Controllers/Users.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$email\\.$#"
+			count: 1
+			path: src/Http/Controllers/Users.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$language\\.$#"
+			count: 1
+			path: src/Http/Controllers/Users.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$user_id\\.$#"
+			count: 1
+			path: src/Http/Controllers/Users.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$username\\.$#"
+			count: 1
+			path: src/Http/Controllers/Users.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\User\\\\Http\\\\Controllers\\\\Users\\:\\:formFindModelObject\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/Users.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Model\\:\\:reloadRelations\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/Users.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\Admin\\\\Facades\\\\AdminMenu\\:\\:setContext\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/Users.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\AdminAuth\\:\\:impersonate\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/Users.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\AdminAuth\\:\\:isSuperUser\\(\\)\\.$#"
+			count: 3
+			path: src/Http/Controllers/Users.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\AdminAuth\\:\\:login\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/Users.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\AdminAuth\\:\\:logout\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/Users.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\AdminAuth\\:\\:stopImpersonate\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Controllers/Users.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Support\\\\Facades\\\\Event\\:\\:fire\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Middleware/ThrottleRequests.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\AdminAuth\\:\\:id\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Requests/UserRequest.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\AssignableLog\\:\\:\\$assignable\\.$#"
+			count: 2
+			path: src/Jobs/AllocateAssignable.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\AssignableLog\\:\\:\\$assignee_group\\.$#"
+			count: 1
+			path: src/Jobs/AllocateAssignable.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\AssignableLog\\:\\:\\$assignee_id\\.$#"
+			count: 1
+			path: src/Jobs/AllocateAssignable.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$avatar_url\\.$#"
+			count: 1
+			path: src/MainMenuWidgets/UserPanel.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$name\\.$#"
+			count: 1
+			path: src/MainMenuWidgets/UserPanel.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$role\\.$#"
+			count: 1
+			path: src/MainMenuWidgets/UserPanel.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\Flame\\\\Html\\\\HtmlFacade\\:\\:attributes\\(\\)\\.$#"
+			count: 1
+			path: src/MainMenuWidgets/UserPanel.php
+
+		-
+			message: "#^Access to undefined constant static\\(Igniter\\\\User\\\\Models\\\\Address\\)\\:\\:CUSTOMER_RELATION\\.$#"
+			count: 1
+			path: src/Models/Address.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\Relation\\:\\:getQualifiedForeignKeyName\\(\\)\\.$#"
+			count: 1
+			path: src/Models/Address.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Models\\\\Address\\:\\:updateOrCreate\\(\\)\\.$#"
+			count: 1
+			path: src/Models/Address.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\AssignableLog\\:\\:\\$assignable_type\\.$#"
+			count: 1
+			path: src/Models/AssignableLog.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\AssignableLog\\:\\:\\$status_id\\.$#"
+			count: 1
+			path: src/Models/AssignableLog.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\AssignableLog\\:\\:\\$user_id\\.$#"
+			count: 1
+			path: src/Models/AssignableLog.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\Flame\\\\Database\\\\Query\\\\Builder\\:\\:whereHas\\(\\)\\.$#"
+			count: 1
+			path: src/Models/AssignableLog.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\<static\\(Igniter\\\\User\\\\Models\\\\AssignableLog\\)\\>\\:\\:whereUnAssigned\\(\\)\\.$#"
+			count: 1
+			path: src/Models/AssignableLog.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\Flame\\\\Database\\\\Model\\:\\:\\$send_invite\\.$#"
+			count: 1
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\Customer\\:\\:\\$address_id\\.$#"
+			count: 1
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\Customer\\:\\:\\$customer\\.$#"
+			count: 1
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\Customer\\:\\:\\$customer_id\\.$#"
+			count: 1
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\Customer\\:\\:\\$email\\.$#"
+			count: 6
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\Customer\\:\\:\\$first_name\\.$#"
+			count: 2
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\Customer\\:\\:\\$full_name\\.$#"
+			count: 2
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\Customer\\:\\:\\$group\\.$#"
+			count: 1
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\Customer\\:\\:\\$is_activated\\.$#"
+			count: 2
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\Customer\\:\\:\\$last_login\\.$#"
+			count: 1
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\Customer\\:\\:\\$last_name\\.$#"
+			count: 2
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\Customer\\:\\:\\$password\\.$#"
+			count: 1
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\Flame\\\\Database\\\\Model\\:\\:addPurgeable\\(\\)\\.$#"
+			count: 1
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\Flame\\\\Database\\\\Model\\:\\:restorePurgedValues\\(\\)\\.$#"
+			count: 1
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\Flame\\\\Database\\\\Model\\:\\:sendInvite\\(\\)\\.$#"
+			count: 1
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\User\\\\Models\\\\Customer\\:\\:addresses\\(\\)\\.$#"
+			count: 5
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\User\\\\Models\\\\Customer\\:\\:pluckDates\\(\\)\\.$#"
+			count: 1
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\Cart\\\\Models\\\\Order\\:\\:where\\(\\)\\.$#"
+			count: 2
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\Reservation\\\\Models\\\\Reservation\\:\\:where\\(\\)\\.$#"
+			count: 1
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Models\\\\Address\\:\\:whereIn\\(\\)\\.$#"
+			count: 1
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Models\\\\Customer\\:\\:whereIsEnabled\\(\\)\\.$#"
+			count: 1
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: src/Models/Customer.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\CustomerGroup\\:\\:\\$approval\\.$#"
+			count: 1
+			path: src/Models/CustomerGroup.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\CustomerGroup\\:\\:\\$group_name\\.$#"
+			count: 1
+			path: src/Models/CustomerGroup.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\User\\\\Models\\\\CustomerGroup\\:\\:customers\\(\\)\\.$#"
+			count: 1
+			path: src/Models/CustomerGroup.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Models\\\\CustomerGroup\\:\\:dropdown\\(\\)\\.$#"
+			count: 1
+			path: src/Models/CustomerGroup.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\Customer\\:\\:\\$is_activated\\.$#"
+			count: 1
+			path: src/Models/Observers/CustomerObserver.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\Customer\\:\\:\\$status\\.$#"
+			count: 1
+			path: src/Models/Observers/CustomerObserver.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\User\\\\Models\\\\Customer\\:\\:addresses\\(\\)\\.$#"
+			count: 1
+			path: src/Models/Observers/CustomerObserver.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\User\\\\Models\\\\User\\:\\:groups\\(\\)\\.$#"
+			count: 1
+			path: src/Models/Observers/UserObserver.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\User\\\\Models\\\\User\\:\\:locations\\(\\)\\.$#"
+			count: 1
+			path: src/Models/Observers/UserObserver.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\Flame\\\\Database\\\\Model\\:\\:\\$send_invite\\.$#"
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$email\\.$#"
+			count: 5
+			path: src/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$full_name\\.$#"
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$language\\.$#"
+			count: 2
+			path: src/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$language_id\\.$#"
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$name\\.$#"
+			count: 4
+			path: src/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$password\\.$#"
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$role\\.$#"
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$sale_permission\\.$#"
+			count: 3
+			path: src/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$status\\.$#"
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$super_user\\.$#"
+			count: 2
+			path: src/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$user\\.$#"
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$user_role_id\\.$#"
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$username\\.$#"
+			count: 2
+			path: src/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Illuminate\\\\Support\\\\Optional\\:\\:\\$code\\.$#"
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\Flame\\\\Database\\\\Model\\:\\:addPurgeable\\(\\)\\.$#"
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\Flame\\\\Database\\\\Model\\:\\:restorePurgedValues\\(\\)\\.$#"
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\Flame\\\\Database\\\\Model\\:\\:sendInvite\\(\\)\\.$#"
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\User\\\\Models\\\\User\\:\\:groups\\(\\)\\.$#"
+			count: 2
+			path: src/Models/User.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\User\\\\Models\\\\User\\:\\:locations\\(\\)\\.$#"
+			count: 2
+			path: src/Models/User.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\User\\\\Models\\\\User\\:\\:pluckDates\\(\\)\\.$#"
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Models\\\\User\\:\\:whereIsEnabled\\(\\)\\.$#"
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: src/Models/User.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\User\\:\\:\\$assign_value\\.$#"
+			count: 1
+			path: src/Models/UserGroup.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\UserGroup\\:\\:\\$auto_assign\\.$#"
+			count: 1
+			path: src/Models/UserGroup.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\UserGroup\\:\\:\\$auto_assign_limit\\.$#"
+			count: 1
+			path: src/Models/UserGroup.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\UserGroup\\:\\:\\$auto_assign_mode\\.$#"
+			count: 1
+			path: src/Models/UserGroup.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\UserGroup\\:\\:\\$users\\.$#"
+			count: 2
+			path: src/Models/UserGroup.php
+
+		-
+			message: "#^Call to an undefined method Igniter\\\\User\\\\Models\\\\UserGroup\\:\\:assignable_logs\\(\\)\\.$#"
+			count: 1
+			path: src/Models/UserGroup.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Models\\\\UserGroup\\:\\:dropdown\\(\\)\\.$#"
+			count: 1
+			path: src/Models/UserGroup.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Models\\\\UserGroup\\:\\:select\\(\\)\\.$#"
+			count: 1
+			path: src/Models/UserGroup.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Auth\\\\Models\\\\User\\:\\:\\$user_id\\.$#"
+			count: 1
+			path: src/Models/UserPreference.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\UserPreference\\:\\:\\$item\\.$#"
+			count: 1
+			path: src/Models/UserPreference.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\UserPreference\\:\\:\\$user_id\\.$#"
+			count: 1
+			path: src/Models/UserPreference.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Facades\\\\AdminAuth\\:\\:getUser\\(\\)\\.$#"
+			count: 1
+			path: src/Models/UserPreference.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Models\\\\UserPreference\\:\\:applyItemAndUser\\(\\)\\.$#"
+			count: 1
+			path: src/Models/UserPreference.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 2
+			path: src/Models/UserPreference.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\User\\\\Models\\\\UserRole\\:\\:\\$users\\.$#"
+			count: 1
+			path: src/Models/UserRole.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Models\\\\UserRole\\:\\:dropdown\\(\\)\\.$#"
+			count: 1
+			path: src/Models/UserRole.php
+
+		-
+			message: "#^Call to an undefined static method Igniter\\\\User\\\\Models\\\\UserRole\\:\\:select\\(\\)\\.$#"
+			count: 1
+			path: src/Models/UserRole.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\Flame\\\\Database\\\\Model\\:\\:\\$assignable\\.$#"
+			count: 4
+			path: src/Notifications/AssigneeUpdatedNotification.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\Flame\\\\Database\\\\Model\\:\\:\\$assignee\\.$#"
+			count: 3
+			path: src/Notifications/AssigneeUpdatedNotification.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\Flame\\\\Database\\\\Model\\:\\:\\$assignee_group\\.$#"
+			count: 2
+			path: src/Notifications/AssigneeUpdatedNotification.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\Flame\\\\Database\\\\Model\\:\\:\\$user\\.$#"
+			count: 1
+			path: src/Notifications/AssigneeUpdatedNotification.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Auth\\\\Factory\\:\\:user\\(\\)\\.$#"
+			count: 2
+			path: src/Notifications/AssigneeUpdatedNotification.php
+
+		-
+			message: "#^Access to an undefined property Igniter\\\\Flame\\\\Database\\\\Model\\:\\:\\$full_name\\.$#"
+			count: 1
+			path: src/Notifications/CustomerRegisteredNotification.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\<Igniter\\\\User\\\\Models\\\\User\\>\\:\\:isEnabled\\(\\)\\.$#"
+			count: 1
+			path: src/Notifications/CustomerRegisteredNotification.php
